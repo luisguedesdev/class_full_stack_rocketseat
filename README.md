@@ -75,5 +75,5 @@ Este repositório é pessoal e tem como objetivo documentar minha jornada de apr
 
 Para mais informações ou dúvidas, entre em contato:
 
-- **Email**: seu-email@example.com
-- **LinkedIn**: [seu-linkedin](https://www.linkedin.com/in/seu-usuario/)
+- **Email**: luisgcguedes@gmail.com
+- **LinkedIn**: [Luis Guilherme Costa Guedes](https://www.linkedin.com/in/luisgcostaguedes/)
