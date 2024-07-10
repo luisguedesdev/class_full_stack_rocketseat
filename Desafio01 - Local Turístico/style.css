@@ -6,8 +6,52 @@
 
 :root {
   --background-color: ##f5f4f0;
+  --border-primary: #d9d9d9;
   --text-primary-color: #1b1b1b;
   --text-secondary-color: #333333;
   --text-text-tertiary: #696969;
   --text-text-headline: #e1624f;
+  --text-accent-blue: #0c51a7;
+  --text-accent-orange: #e95e10;
+  --text-accent-pink: #e5245e;
+  --text-accent-purple: #591b98;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main p {
+  text-align: center;
+}
+p > strong {
+  color: var(--text-text-headline);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--text-primary-color);
+  margin-bottom: 44px;
+  margin-top: 8px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+img {
+  margin-bottom: 20px;
 }
