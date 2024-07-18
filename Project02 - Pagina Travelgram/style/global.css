@@ -19,6 +19,17 @@
 }
 
 body {
+  font: var(--text-md);
   color: var(--text-color-secondary);
   background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*aqui é para o link ficar com a cor padrão do texto que será herdado do pai*/
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
 }
