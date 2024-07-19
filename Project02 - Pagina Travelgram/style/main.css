@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-block: 24px; /*paddind aplicado apenas na vertical nos extremos*/
+}
+
+main img {
+  width: 286px;
+  height: 286px;
+  object-fit: cover; /*usado para forçar a imagem a preencher o quadrado, caso ela não seja uma imagem quadrada*/
+}
