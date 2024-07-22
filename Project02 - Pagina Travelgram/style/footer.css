@@ -4,6 +4,7 @@ footer {
   align-items: center;
   line-height: 0;
   padding: 20px;
+  font: 14px/150% var(--font-family);
 }
 
 footer ul {
