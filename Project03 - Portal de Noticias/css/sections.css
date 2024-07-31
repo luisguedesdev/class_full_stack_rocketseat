@@ -20,7 +20,7 @@
       bottom: 0;
       padding: 24px;
       h2 {
-        margin-top: 8px;
+        margin-top: 8px; /*agora com as novas propriedades do css podemos usar a cascata como no HTML aqui no css, mas lembrando que isto só está funcionando nos navegaroes mais novos, por isso é preciso adaptar tb para os antigos */
       }
     }
   }
