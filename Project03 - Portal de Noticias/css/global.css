@@ -39,6 +39,11 @@ h1,
 h2,
 h3 {
   font: inherit;
+  /* principal função desta configuração é que teremos alguns subtitulos em caixas distintas e assim eles devem seguir as configurações onde eles estarão inseridos */
+}
+
+img {
+  max-width: 100%;
 }
 
 div {
@@ -52,11 +57,6 @@ div {
   margin-inline: auto;
 }
 
-/*utility-first */
-.grid {
-  display: grid;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
+main {
+  margin-top: 40px;
 }
