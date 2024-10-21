@@ -9,7 +9,7 @@
     overflow: hidden;
     position: relative;
     &::before {
-      /*O &::before nada mais é que a abreviação de .card::before que é tão usual no css*/
+      /* O &::before nada mais é que a abreviação de .card::before que é tão usual no css*/
       content: "";
       position: absolute;
       inset: 0;
