@@ -1,0 +1,12 @@
+/* Intro */
+
+width: 1366px;
+height: 750px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;

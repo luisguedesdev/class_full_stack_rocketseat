@@ -46,10 +46,9 @@ img {
   max-width: 100%;
 }
 
-
 .container {
   max-width: 1280px;
-  padding-inline: 32px;
+  padding-inline: 32px; /* define o espaçamento interno (padding) nas laterais esquerda e direita de um elemento, levando em consideração a direção de escrita do texto (direção inline)*/
   margin-inline: auto;
 }
 
