@@ -1,6 +1,12 @@
 #primary {
   padding-block: 20px; /*aplica apenas os 20px em cima e embaixo e não dos lados*/
 
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   /*nesting css*/
 
   div:nth-child(2) {
