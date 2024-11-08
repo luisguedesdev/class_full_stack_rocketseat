@@ -1,31 +1,13 @@
 #intro {
   background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
 
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
 
-  background-size: cover; /* A imagem cobre toda a área do elemento */
 }
 
-.avatar-container {
-  position: relative;
-  width: 112px; /* Igual ao SVG */
-  height: 112px; /* Igual ao SVG */
-}
-
-.avatar {
-  position: absolute;
-  top: 7px; /* Margem interna do SVG */
-  left: 7px;
-  width: 98px; /* Tamanho interno do SVG */
-  height: 98px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.avatar-border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 112px;
-  height: 112px;
+#projects {
+  background-color: var(--base-gray200);
 }
