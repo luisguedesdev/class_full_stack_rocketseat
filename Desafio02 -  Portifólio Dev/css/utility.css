@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -18,3 +22,22 @@
   gap: 32px;
 }
 
+.text-2xl {
+  font: var(--h1);
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
