@@ -24,7 +24,7 @@
   --h3: 800 16px/120% var(--title);
   --text-md: 400 16px/140% var(--text);
   --text-sm: 400 14px/140% var(--text);
-  --text-sub: 400 20px/120% var(--text);
+  --text-sub: 400 20px/120% var(--subtitle);
 }
 
 body {
@@ -40,5 +40,4 @@ a {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-
 }

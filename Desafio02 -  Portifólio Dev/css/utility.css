@@ -41,3 +41,30 @@
 .text-sm {
   font: var(--text-sm);
 }
+
+.text-sub{
+  font: var(--text-sub);
+}
+
+.main-red {
+  color: var(--main-red);
+}
+
+.main-purple {
+  color: var(--main-purple);
+}
+
+.main-blue {
+  color: var(--main-blue);
+}
+
+.main-green {
+  color: var(--main-green);
+} 
+
+.main-yellow {
+  color: var(--main-yellow);
+}
+
+
+
