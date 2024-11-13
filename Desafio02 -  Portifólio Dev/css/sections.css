@@ -47,8 +47,18 @@
     padding: 8px 16px;
     gap: 8px;
     font: var(--text-md);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
+
+  
 }
+
+.btn-arrow-down {
+  border: 2px solid transparent; /* Inicialmente sem contorno visível */
+  border-radius: 50%; /* Borda arredondada */
+  transition: border-color 0.3s ease; /* Suavização da transição */
+}
+
 
 #projects {
   background-color: var(--base-gray200);
