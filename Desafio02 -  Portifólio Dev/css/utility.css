@@ -22,15 +22,15 @@
   gap: 32px;
 }
 
-.text-2xl {
+.title-lg {
   font: var(--h1);
 }
 
-.text-xl {
+.title-md {
   font: var(--h2);
 }
 
-.text-lg {
+.title-sm {
   font: var(--h3);
 }
 
@@ -42,7 +42,7 @@
   font: var(--text-sm);
 }
 
-.text-sub{
+.text-sub {
   font: var(--text-sub);
 }
 
@@ -60,11 +60,32 @@
 
 .main-green {
   color: var(--main-green);
-} 
+}
 
 .main-yellow {
   color: var(--main-yellow);
 }
 
+.base-gray100 {
+  color: var(--base-gray100);
+}
 
+.base-gray200 {
+  color: var(--base-gray200);
+}
 
+.base-gray300 {
+  color: var(--base-gray300);
+}
+
+.base-gray400 {
+  color: var(--base-gray400);
+}
+
+.base-gray500 {
+  color: var(--base-gray500);
+}
+
+.base-gray600 {
+  color: var(--base-gray600);
+}

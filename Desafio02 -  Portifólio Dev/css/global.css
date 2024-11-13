@@ -19,9 +19,9 @@
   --title: "Asap", sans-serif;
   --subtitle: "Inconsolata", monospace;
   --text: "Maven Pro", sans-serif;
-  --h1: 800 56px/120% var(--title);
-  --h2: 800 24px/120% var(--title);
-  --h3: 800 16px/120% var(--title);
+  --h1: 700 56px/120% var(--title);
+  --h2: 700 24px/120% var(--title);
+  --h3: 700 16px/120% var(--title);
   --text-md: 400 16px/140% var(--text);
   --text-sm: 400 14px/140% var(--text);
   --text-sub: 400 20px/120% var(--subtitle);
@@ -38,6 +38,6 @@ a {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
 }
