@@ -8,42 +8,7 @@ A Formação Full Stack da Rocketseat é um programa intensivo de aprendizado qu
 
 ## Estrutura do Repositório
 
-O repositório está organizado em pastas, cada uma representando um módulo ou projeto específico da formação. Abaixo está a estrutura geral:
 
-```
-.
-├── Modulo-01
-│   ├── Desafio-01
-│   ├── Desafio-02
-│   └── Projeto-Final
-├── Modulo-02
-│   ├── Desafio-01
-│   ├── Desafio-02
-│   └── Projeto-Final
-├── Modulo-03
-│   ├── Desafio-01
-│   ├── Desafio-02
-│   └── Projeto-Final
-└── README.md
-```
-
-### Módulo 01: Fundamentos do Desenvolvimento Web
-
-- **Desafio 01**: Descrição do desafio 1.
-- **Desafio 02**: Descrição do desafio 2.
-- **Projeto Final**: Descrição do projeto final do módulo.
-
-### Módulo 02: Front-end Avançado
-
-- **Desafio 01**: Descrição do desafio 1.
-- **Desafio 02**: Descrição do desafio 2.
-- **Projeto Final**: Descrição do projeto final do módulo.
-
-### Módulo 03: Back-end Avançado
-
-- **Desafio 01**: Descrição do desafio 1.
-- **Desafio 02**: Descrição do desafio 2.
-- **Projeto Final**: Descrição do projeto final do módulo.
 
 ## Tecnologias Utilizadas
 

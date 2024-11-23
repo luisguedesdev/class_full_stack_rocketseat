@@ -15,17 +15,19 @@
   --text-highlight: #e43a12;
 
   --surface-primary: #ffffff;
-  --surface-secondary: #FEE7D6;
-  --surface-primary: #E7E5E4;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
 
-  --stroke-default: #D6D3D1;
-  --stroke-highlight: #F3541C;
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
 
-  --semantic-error: #DC2626;
+  --semantic-error: #dc2626;
 
   --font-primary: "Poppins", sans-serif;
   --h1: 700 32px/120% var(--font-primary);
   --h2: 700 24px/120% var(--font-primary);
   --h3: 700 20px/120% var(--font-primary);
   --h4: 700 16px/120% var(--font-primary);
+  --text: 400 1rem/1.5 var(--font-primary);
+  --text-small: 400 0.875rem/1.4 var(--font-primary);
 }
