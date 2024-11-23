@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
-
 :root {
-  --brand-light: #F67841;
-  --brand-mid: #F3541C;
-  --brand-dark: #E43A12;
-  --text-primary: #292524
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+  --text-primary: #292524;
+
+  --font-primary: "Poppins", sans-serif;
+  --h1: 700 32px/120% var(--font-primary);
+  --h2: 700 24px/120% var(--font-primary);
+  --h3: 700 20px/120% var(--font-primary);
+  --h4: 700 16px/120% var(--font-primary);
 }
