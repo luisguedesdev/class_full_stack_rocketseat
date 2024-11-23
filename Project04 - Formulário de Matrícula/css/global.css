@@ -8,7 +8,20 @@
   --brand-light: #f67841;
   --brand-mid: #f3541c;
   --brand-dark: #e43a12;
+
   --text-primary: #292524;
+  --text-secundary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  --surface-primary: #ffffff;
+  --surface-secondary: #FEE7D6;
+  --surface-primary: #E7E5E4;
+
+  --stroke-default: #D6D3D1;
+  --stroke-highlight: #F3541C;
+
+  --semantic-error: #DC2626;
 
   --font-primary: "Poppins", sans-serif;
   --h1: 700 32px/120% var(--font-primary);
