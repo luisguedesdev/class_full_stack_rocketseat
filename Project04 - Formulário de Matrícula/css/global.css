@@ -31,3 +31,7 @@
   --text: 400 1rem/1.5 var(--font-primary);
   --text-small: 400 0.875rem/1.4 var(--font-primary);
 }
+
+body {
+  overflow: hidden;
+}
