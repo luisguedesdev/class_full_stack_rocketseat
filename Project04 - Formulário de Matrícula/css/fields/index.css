@@ -67,4 +67,38 @@ input {
     border: 1px solid var(--stroke-default);
     color: var(--text-primary);
   }
+
+  &:invalid {
+    border: 0.125rem solid var(--semantic-error);
+  }
+
+  & + small {
+    font: var(--text-small);
+    color: #78716c;
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: var(--text-small);
+    color: var(--semantic-error);
+    margin-top: 0.25rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+    /* 
+      Esta regra esconde o elemento de erro (.error) quando:
+      - O campo do formulário (representado pelo &) está válido (:valid).
+      - O campo não está em foco (:not(:focus)).
+      - O elemento .error deve ser um irmão adjacente direto (+) do campo.
+
+      O objetivo é evitar que mensagens de erro sejam exibidas para campos
+      que já foram preenchidos corretamente e que o usuário não está mais
+      interagindo no momento.
+    */
+  }
 }
