@@ -26,7 +26,7 @@ A Formação Full Stack da Rocketseat é um programa intensivo de aprendizado qu
 Para clonar este repositório e acessar os projetos localmente, execute os seguintes comandos:
 
 ```bash
-git clone https://github.com/seu-usuario/formacao-fullstack-rocketseat.git
+git clone https://github.com/luisgcostaguedes/class_full_stack_rocketseat.git
 cd formacao-fullstack-rocketseat
 ```
 
