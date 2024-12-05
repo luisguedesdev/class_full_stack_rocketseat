@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-  <title>Document</title>
+  <title>Formulário de Convite</title>
 </head>
 
 <body>
+  <div id="app">
+    <aside id="fixed">
+      <div id="logo">
+        <img src="/assets/Logo.svg" alt="">
+      </div>
+      <header>
+        <h1>Festivite</h1>
+        <h3>Crie um convite digital para seu evento</h3>
+      </header>
+    </aside>
+    <main id="invite">
+      <div class="form-container">
+        <h1>Crie seu convite</h1>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="about-event">
+            <div class="title">
+              <img src="/assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+            </div>
 
+            <div class="input-wrapper">
+              <label for="event-name">Título</label>
+              <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+  </div>
 </body>
 
 </html>

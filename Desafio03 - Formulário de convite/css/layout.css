@@ -1,0 +1,29 @@
+#app {
+  display: grid;
+  grid-template-columns: 36.25% 63.75%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--shape-background);
+  padding: 1.25rem;
+  gap: 1.25rem;
+}
+
+#fixed {
+  background-image: url(/assets/Background.png);
+  background-size: cover; /* Faz a imagem ocupar todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  border-radius: 0.75rem;
+}
+
+#invite {
+  border-radius: 0.75rem;
+  background-color: var(--shape-body);
+  max-width: calc(100% - 1.25rem);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 7.5rem;
+}
