@@ -8,22 +8,65 @@
   gap: 1.25rem;
 }
 
+body {
+  overflow: hidden;
+}
+
 #fixed {
   background-image: url(/assets/Background.png);
   background-size: cover; /* Faz a imagem ocupar todo o espaço */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição */
   border-radius: 0.75rem;
+
+  header {
+    padding: 2rem;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .logo {
+      font: var(--logo-text);
+      color: var(--accent-pink);
+      line-height: auto;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font: var(--text-body-md);
+      color: var(--text-color);
+      line-height: auto;
+    }
+  }
 }
 
 #invite {
   border-radius: 0.75rem;
   background-color: var(--shape-body);
   max-width: calc(100% - 1.25rem);
+
+  h1 {
+    font: var(--header-text-md);
+    color: var(--header-color);
+    line-height: auto;
+  }
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   padding: 5rem 7.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  h3 {
+    font: var(--header-text-sm);
+    color: var(--header-color);
+    line-height: auto;
+    margin-left: 0.75rem;
+  }
 }

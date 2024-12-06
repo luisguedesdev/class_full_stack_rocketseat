@@ -16,12 +16,11 @@
 <body>
   <div id="app">
     <aside id="fixed">
-      <div id="logo">
-        <img src="/assets/Logo.svg" alt="">
-      </div>
+
       <header>
-        <h1>Festivite</h1>
-        <h3>Crie um convite digital para seu evento</h3>
+        <img src="/assets/Logo.svg" alt="">
+        <h1 class="logo">Festivite</h1>
+        <p>Crie um convite digital para seu evento</p>
       </header>
     </aside>
     <main id="invite">
@@ -31,7 +30,7 @@
           <fieldset class="about-event">
             <div class="title">
               <img src="/assets/icons/calendar.svg" alt="">
-              <legend>Sobre o evento</legend>
+              <h3>Sobre o evento</h3>
             </div>
 
             <div class="input-wrapper">
@@ -39,6 +38,45 @@
               <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
             </div>
 
+            <div class="flex gap-1">
+
+              <div class="input-wrapper flex-1">
+                <label for="event-hour-start">Início</label>
+                <input type="text" name="event-hour-start" id="event-hour-start" placeholder="DD/MM/AAAA, --:--">
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="event-hour-finish">Fim</label>
+                <input type="text" name="event-hour-finish" id="event-hour-finish" placeholder="DD/MM/AAAA, --:--">
+              </div>
+            </div>
+            <div class="flex gap-1">
+
+
+              <div class="input-wrapper flex-1">
+                <label for="event-type">Tipo</label>
+                <input type="text" name="event-type" id="event-type" placeholder="Nome do evento">
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="event-local">Local</label>
+                <input type="text" name="event-local" id="event-local" placeholder="Nome do evento">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="5"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="personalization">
+            <div class="title">
+              <img src="/assets/icons/paintbrush-vertical.svg" alt="">
+              <h3>Personalização</h3>
+            </div>
           </fieldset>
         </form>
       </div>
