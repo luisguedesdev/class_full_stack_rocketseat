@@ -8,7 +8,7 @@
   justify-content: center;
   width: fit-content;
 
-  border-radius: 2rem;
+  border-radius: 1rem;
   font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
   cursor: pointer;
 
@@ -32,10 +32,34 @@
 
 .btn-md {
   padding: 0.75rem 1.5rem;
-  font-size: var(--fs-base);
+  font-size: var(
+    --fs-base
+  ); /*aqui temos exemplos de tamanhos de botões que iremos utilizar*/
 }
 
 .btn-lg {
   padding: 1rem 2rem;
   font-size: 1.125rem;
+}
+
+.btn[aria-label] {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+  }
+  &::after {
+    content: attr(
+      aria-label
+    ); /*aqui estamos utilizando o atributo aria-label para adicionar um texto ao botão*/
+    background: var(--btn-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
 }
