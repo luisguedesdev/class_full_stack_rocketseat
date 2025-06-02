@@ -1,65 +1,78 @@
+/* Aplica o box-sizing: border-box a todos os elementos e seus pseudoelementos,
+   para que padding e borda não aumentem a largura/altura total do elemento */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Reset básico de estilo para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  font: inherit; /* reset de fonte */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove paddings padrão */
+  font: inherit; /* Herdar fonte do elemento pai */
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização de fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Melhora a renderização de fontes no Firefox em macOS */
 }
 
+/* Variáveis globais do projeto */
 :root {
-  --bg-color: #09090b;
-  --surface-color: #18181b;
-  --stroke-color: #27272a;
-  --text-color-primary: #f4f4f5;
-  --text-color-secondary: #a1a1aa;
-  --brand-color-primary: #f7b733;
-  --brand-color-secondary: #fc4a1a;
+  /* Cores principais do tema (modo escuro) */
+  --bg-color: #09090b; /* Cor de fundo da página */
+  --surface-color: #18181b; /* Cor para superfícies (ex: caixas, cards) */
+  --stroke-color: #27272a; /* Cor para bordas */
+  --text-color-primary: #f4f4f5; /* Cor principal dos textos */
+  --text-color-secondary: #a1a1aa; /* Cor secundária dos textos */
+  --brand-color-primary: #f7b733; /* Cor principal da marca */
+  --brand-color-secondary: #fc4a1a; /* Cor secundária da marca */
 
-  --ff-sans: "Inter", system-ui, sans-serif; /*font-family - sans-serif*/
-  --fw-base: 400; /*font-weight - base*/
-  --fw-md: 500;
-  --fw-bold: 800;
+  /* Tipografia */
+  --ff-sans: "Inter", system-ui, sans-serif; /* Fonte padrão sem serifa */
+  --fw-base: 400; /* Peso da fonte padrão */
+  --fw-md: 500; /* Peso médio */
+  --fw-bold: 800; /* Peso negrito */
 
-  --fs-sm: 0.875rem; /*font-size - small*/
-  --fs-base: 1rem;
-  --fs-lg: 1.25rem;
-  --fs-xl: 1.5rem;
-  --fs-2xl: 2.5rem;
+  /* Tamanhos de fonte */
+  --fs-sm: 0.875rem; /* Pequeno */
+  --fs-base: 1rem; /* Base/padrão */
+  --fs-lg: 1.25rem; /* Grande */
+  --fs-xl: 1.5rem; /* Extra grande */
+  --fs-2xl: 2.5rem; /* Duplamente grande */
 
-  --px-lg: 1.5rem; /*padding horizontal - eixo x*/
+  /* Espaçamentos horizontais (eixo x) */
+  --px-lg: 1.5rem;
 
-  --py-base: 1rem; /*padding vertical - eixo y*/
+  /* Espaçamentos verticais (eixo y) */
+  --py-base: 1rem;
   --py-lg: 1.5rem;
   --py-xl: 3rem;
 }
 
+/* Define estilo padrão para o HTML */
 html {
-  font-family: var(--ff-sans);
-  font-weight: var(--fw-base);
-  font-size: var(--fs-base);
-  line-height: 1.6;
-  color: var(--text-color-primary);
+  font-family: var(--ff-sans); /* Usa a fonte definida na raiz */
+  font-weight: var(--fw-base); /* Peso base */
+  font-size: var(--fs-base); /* Tamanho de fonte base */
+  line-height: 1.6; /* Altura da linha para facilitar leitura */
+  color: var(--text-color-primary); /* Cor padrão do texto */
 }
 
+/* Define o fundo da página */
 body {
   background-color: var(--bg-color);
 }
 
+/* Estilos para títulos (h1, h2, h3) */
 h1,
 h2,
 h3 {
-  line-height: 1.2;
-  color: var(--text-color-primary);
-  font-weight: var(--fw-bold);
-  letter-spacing: -0.04em;
+  line-height: 1.2; /* Títulos têm espaçamento menor entre linhas */
+  color: var(--text-color-primary); /* Mesma cor dos textos padrão */
+  font-weight: var(--fw-bold); /* Peso negrito */
+  letter-spacing: -0.04em; /* Aproxima um pouco as letras */
 }
 
+/* Tamanhos de fonte específicos para títulos */
 h1 {
   font-size: var(--fs-2xl);
 }
@@ -72,21 +85,26 @@ h3 {
   font-size: var(--fs-lg);
 }
 
+/* Remove sublinhado e herda a cor do texto para links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Remove os marcadores de listas quando o atributo role="list" está presente */
 ul[role="list"] {
   list-style: none;
 }
 
+/* Estilos que se aplicam apenas em telas grandes (largura >= 80em / 1280px) */
 @media (width >= 80em) {
   :root {
+    /* Aumenta os tamanhos das fontes para melhor leitura em telas grandes */
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;
 
+    /* Aumenta os espaçamentos horizontais e verticais */
     --px-lg: 2rem;
 
     --py-base: 1.5rem;

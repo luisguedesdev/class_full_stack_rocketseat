@@ -1,55 +1,73 @@
+/* Define espaçamento vertical (padding acima e abaixo) com valor de uma variável personalizada */
 .py-base {
   padding-block: var(--py-base);
 }
 
+/* Define um espaçamento vertical maior */
 .py-lg {
   padding-block: var(--py-lg);
 }
 
+/* Define um espaçamento vertical ainda maior */
 .py-xl {
   padding-block: var(--py-xl);
 }
 
+/* Define espaçamento horizontal (padding nas laterais) com valor grande */
 .px-lg {
   padding-inline: var(--px-lg);
 }
 
+/* Classe de container principal com largura máxima definida por variável
+   e centralização horizontal */
 .container {
-  --max-width: 375px;
+  --max-width: 375px; /* Define largura máxima padrão (para dispositivos pequenos) */
   width: min(var (--max-width), 100% - var(--px-lg) * 2);
-  margin-inline: auto;
+  /* Usa o menor valor entre a largura máxima ou 100% da tela menos os paddings laterais */
+  margin-inline: auto; /* Centraliza horizontalmente */
 }
 
+/* Esconde o elemento por padrão – só será exibido em telas grandes */
 .desktop-only {
   display: none;
 }
+
+/* Gera um layout em grid com espaçamento entre os itens */
 .even-columns {
   display: grid;
-  gap: 1rem;
+  gap: 1rem; /* Espaço entre as colunas ou linhas */
 }
 
+/* Atalho para exibir como flex container */
 .flex {
   display: flex;
 }
 
+/* Define espaçamento entre elementos filhos (em grid ou flex) */
 .gap-1 {
   gap: 1rem;
 }
 
+/* Atalho para exibir como grid container */
 .grid {
   display: grid;
 }
 
+/* Regras aplicadas apenas a partir de 80em (~1280px) */
 @media (width >= 80em) {
+  /* Aumenta a largura máxima do container em telas grandes */
   .container {
     --max-width: 80rem;
   }
 
+  /* Exibe elementos com a classe 'desktop-only' em telas grandes */
   .desktop-only {
     display: initial;
   }
+
+  /* Transforma o grid em colunas com largura igual para cada uma */
   .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-auto-flow: column; /* Organiza automaticamente em colunas */
+    grid-auto-columns: 1fr; /* Cada coluna recebe o mesmo espaço */
   }
 }

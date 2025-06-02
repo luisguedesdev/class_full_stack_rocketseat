@@ -1,19 +1,26 @@
 .btn {
-  --btn-bg-color: var(--text-color-primary);
-  --btn-color: var(--bg-color);
-  border: 0;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
+  --btn-bg-color: var(
+    --text-color-primary
+  ); /* Define cor de fundo padrão do botão */
+  --btn-color: var(--bg-color); /* Define cor do texto padrão do botão */
 
-  border-radius: 1rem;
+  border: 0; /* Remove borda padrão */
+  background-color: transparent; /* Inicialmente, cor de fundo transparente */
+  display: flex; /* Usa flexbox para alinhar conteúdo interno */
+  align-items: center; /* Alinha conteúdo verticalmente ao centro */
+  justify-content: center; /* Alinha conteúdo horizontalmente ao centro */
+  width: fit-content; /* Largura do botão se ajusta ao conteúdo */
+
+  border-radius: 1rem; /* Borda arredondada */
   font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
-  cursor: pointer;
+  /* Define a fonte: peso médio, tamanho base, altura da linha, e família de fonte */
 
-  background: var(--btn-bg-color);
-  color: var(--btn-color);
+  cursor: pointer; /* Cursor em forma de mãozinha ao passar o mouse */
+
+  background: var(
+    --btn-bg-color
+  ); /* Cor de fundo final (controlada por variável) */
+  color: var(--btn-color); /* Cor do texto final (controlada por variável) */
 }
 
 .btn:hover {
@@ -21,45 +28,51 @@
     90deg,
     var(--brand-color-secondary) 0%,
     var(--brand-color-primary) 100%
-  );
-  --btn-color: var(--surface-color);
+  ); /* Ao passar o mouse, define um degradê como fundo */
+  --btn-color: var(--surface-color); /* E altera a cor do texto */
 }
 
+/* Botão tamanho pequeno */
 .btn-sm {
-  padding: 0.5rem 1rem; /*primeiro valor é o espaço de cima e o de baixo, já o segundo valor é as laterais */
-  font-size: var(--fs-sm);
+  padding: 0.5rem 1rem; /* Espaçamento: cima/baixo 0.5rem, laterais 1rem */
+  font-size: var(--fs-sm); /* Tamanho de fonte menor */
 }
 
+/* Botão tamanho médio */
 .btn-md {
-  padding: 0.75rem 1.5rem;
-  font-size: var(
-    --fs-base
-  ); /*aqui temos exemplos de tamanhos de botões que iremos utilizar*/
+  padding: 0.75rem 1.5rem; /* Espaçamento: cima/baixo 0.75rem, laterais 1.5rem */
+  font-size: var(--fs-base); /* Fonte base padrão */
 }
 
+/* Botão tamanho grande */
 .btn-lg {
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
+  padding: 1rem 2rem; /* Mais espaçoso: cima/baixo 1rem, laterais 2rem */
+  font-size: 1.125rem; /* Tamanho da fonte manualmente definido */
 }
 
+/* Botões que possuem o atributo aria-label (acessibilidade) */
 .btn[aria-label] {
-  position: relative;
+  position: relative; /* Necessário para posicionar os pseudoelementos */
+
   &::before {
     content: "";
     position: absolute;
-    border-radius: inherit;
-    inset: 0.09375rem;
-    background-color: var(--bg-color);
+    border-radius: inherit; /* Mantém o mesmo border-radius do botão */
+    inset: 0.09375rem; /* Cria um recuo interno leve */
+    background-color: var(--bg-color); /* Cor de fundo da borda interna */
   }
+
   &::after {
     content: attr(
       aria-label
-    ); /*aqui estamos utilizando o atributo aria-label para adicionar um texto ao botão*/
-    background: var(--btn-bg-color);
+    ); /* Usa o conteúdo do atributo aria-label como texto */
+    background: var(
+      --btn-bg-color
+    ); /* Usa o fundo do botão como fundo do texto */
     -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background-clip: text; /* Aplica o fundo ao texto */
+    color: transparent; /* Torna o texto transparente (aparece com o fundo) */
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Garante que o texto fique acima do fundo interno */
   }
 }
